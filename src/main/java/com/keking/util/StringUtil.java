@@ -1,7 +1,5 @@
 package com.keking.util;
 
-import java.io.File;
-
 /**
  * 字符串工具类
  * <p>

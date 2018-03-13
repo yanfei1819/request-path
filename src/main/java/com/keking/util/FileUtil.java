@@ -28,9 +28,9 @@ public class FileUtil {
      * @return
      */
     public static String[] getFilePathes(String parentPath) {
-        File f = new File(parentPath);
-        String[] fiel = f.list();
-        return fiel;
+        File file = new File(parentPath);
+        String[] files = file.list();
+        return files;
     }
 
     /**
