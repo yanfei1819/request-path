@@ -16,7 +16,7 @@ public class FileUtil {
      *
      * @return
      */
-    public static String readAbsolutePath() {
+    public static String getAbsolutePath() {
         File file = new File("request-path");
         return StringUtils.substringBeforeLast(file.getAbsolutePath(), "\\");
     }
