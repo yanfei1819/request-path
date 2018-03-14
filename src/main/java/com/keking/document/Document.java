@@ -22,6 +22,8 @@ public class Document {
 
     //输出文件的映射路径的位置
     private static String WRITE_TXT_PATH = PropertiesUtil.getPropertis("tms_url_out_path");
+
+    private static String APP_GETURL = PropertiesUtil.getPropertis("app_geturl_out_path");
     //是否直接覆盖文件
     private static boolean RE_WRITE = true;
 
@@ -72,6 +74,7 @@ public class Document {
         StringBuffer sb = new StringBuffer();
         int i = 0;
         String classpath = "";
+
         while (br.ready()) {
             String mapper = br.readLine();
             mapper = StringUtil.trim(mapper);
@@ -139,7 +142,7 @@ public class Document {
     }
 
     /**
-     * 写出文件内容
+     * 将文本内容写入文件中
      *
      * @param fileStr
      * @param str
@@ -152,6 +155,5 @@ public class Document {
         os.flush();
         fos.close();
     }
-
 
 }
