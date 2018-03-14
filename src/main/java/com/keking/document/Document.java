@@ -15,7 +15,7 @@ public class Document {
     //扫描包
     private static String SACNNER_PACKAGE = "/main/java/com/yudianbank/tms/controller/";
     //输出文件的映射路径的位置
-    private static String WRITE_TXT_PATH = "mapper.txt";
+    private static String WRITE_TXT_PATH = "src/main/resources/input_data/mapper.txt";
     //是否直接覆盖文件
     private static boolean RE_WRITE = true;
 
@@ -107,6 +107,22 @@ public class Document {
         br.close();
         return sb.toString();
     }
+
+    // 项目文件中获取url
+    public static void getUrl(){
+        Document r = new Document();
+        r.writerMapper();
+        System.out.println("===========URL提取结束=========");
+        try {
+            String str = FileUtil.readFileText(WRITE_TXT_PATH);
+            String newString = str.substring(0,str.lastIndexOf(","))+"]";
+            FileUtil.outputFileText(WRITE_TXT_PATH,newString);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
 
 
 }

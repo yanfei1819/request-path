@@ -2,6 +2,7 @@ package com.keking.action;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.keking.document.Document;
 import com.keking.url.MenuUrl;
 import com.keking.util.FileUtil;
 import com.keking.util.JsonUtil;
@@ -51,5 +52,9 @@ public class CheckPathAction {
         }
         System.out.println("======匹配成功的数量是：" + successCount + "======");
         System.out.println("======匹配失败的数量是：" + failCount + "======");
+    }
+
+    public static void main(String[] args) {
+        Document.getUrl();
     }
 }
