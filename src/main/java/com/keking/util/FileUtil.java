@@ -65,54 +65,9 @@ public class FileUtil {
         return laststr;
     }
 
-    /**
-     * 读取文件内容
-     *
-     * @param fileName
-     * @return
-     * @throws Exception
-     */
-    public static String readFileText(String fileName) throws Exception {
-        BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(fileName));
-        ByteArrayOutputStream memStream = new ByteArrayOutputStream();
-        byte[] buffer = new byte[1024];
-        int len = 0;
-        while ((len = bufferedInputStream.read(buffer)) != -1) {
-            memStream.write(buffer, 0, len);
-        }
-        byte[] data = memStream.toByteArray();
-        bufferedInputStream.close();
-        memStream.close();
-        bufferedInputStream.close();
-        System.out.println();
-        return new String(data);
-    }
 
-    /**
-     * 写出文件内容
-     *
-     * @param fileStr
-     * @param str
-     * @throws IOException
-     */
-    public static void outputFileText(String fileStr, String str) throws IOException {
-        FileOutputStream fos = null;
-        try {
-            fos = new FileOutputStream(new File(fileStr));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        Writer os = null;
-        try {
-            os = new OutputStreamWriter(fos, "GBK");
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-        os.write(str);
-        os.flush();
-        fos.close();
 
-    }
+
 
 
 }
