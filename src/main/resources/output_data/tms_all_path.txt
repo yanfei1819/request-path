@@ -1,0 +1,246 @@
+文件路径是:F:\workplace\tms\ydjf-tms-hefei.git\src\main\java\com\yudianbank\tms\controller\
+----------ApprovalUserController.java----------
+1. /app/approval/getValidateCode,GET
+2. /app/approval/validCapChat,GET
+3. /app/approval/login,POST
+4. /app/approval/sendMobileCapChat,GET
+5. /app/approval/mobileLogin,POST
+6. /app/approvalgetUserMobile,GET
+7. /app/approvalgetVerifyCodel,GET
+8. /app/approval/modifyPwd,POST
+9. /app/approval/getMobileVerifyCodeByFindPassword,POST
+10. /app/approval/checkMobileVerifyCodeByFindPassword,POST
+11. /app/approval/findPassword,POST
+12. /app/approval/getEmailFlag,GET
+13. /app/approval/setEmailFlag,GET
+
+----------BillDetailController.java----------
+
+----------CoreSystemController.java----------
+1. /api/tms/core/getPartnerNoAndOrgId,GET
+
+----------ExceptionController.java----------
+
+----------ExportExcelController.java----------
+1. /api/tms/exportExcel/profitReportList,POST
+
+----------TmsCarController.java----------
+1. /api/tms/car/createCar,POST
+2. /api/tms/car/deleteCar,POST
+3. /api/tms/car/updateCar,POST
+4. /api/tms/car/getCar,GET
+5. /api/tms/car/listCars,GET
+6. /api/tms/car/importExcel,POST
+7. /api/tms/car/checkCarNoInPartnerNo,GET
+
+----------TmsCustomerController.java----------
+1. /api/tms/customer/addCustomer,POST
+2. /api/tms/customer/updateTmsCustomer,POST
+3. /api/tms/customer/getTmsCustomer,GET
+4. /api/tms/customer/listTmsCustomers,GET
+5. /api/tms/customer/addTmsLine,POST
+6. /api/tms/customer/listTmsProjects,GET
+7. /api/tms/customer/listProjects,GET
+8. /api/tms/customer/addProject,POST
+9. /api/tms/customer/updateProject,POST
+10. /api/tms/customer/getProject,GET
+
+----------TmsDriverController.java----------
+1. /api/tms/driver/createDriver,POST
+2. /api/tms/driver/deleteDriver,POST
+3. /api/tms/driver/updateDriver,POST
+4. /api/tms/driver/getDriver,GET
+5. /api/tms/driver/listDrivers,GET
+6. /api/tms/driver/createTmsAppDriver/simple,POST
+7. /api/tms/driver/listTmsAppDriver,GET
+8. /api/tms/driver/appCreateDriver,POST
+9. /api/tms/driver/createTmsAppDriver/all,POST
+10. /api/tms/driver/createUnCerAppDriver,POST
+11. /api/tms/driver/getTmsAppDriverDetail,GET
+12. /api/tms/driver/deleteTmsAppDriver,POST
+13. /api/tms/driver/updateTmsAppDriver,POST
+14. /api/tms/driver/importExcel,POST
+15. /api/tms/driver/createRelevance,POST
+16. /api/tms/driver/listAppCars,GET
+17. /api/tms/driver/listAppDriver,GET
+18. /api/tms/driver/existUncertificatedCar,GET
+19. /api/tms/driver/updateAppCar,POST
+20. /api/tms/driver/getBankCardAndVehicleNo,GET
+21. /api/tms/driver/saveBankCard,POST
+
+----------TmsFinanceController.java----------
+1. /api/tms/finance/verificationBillList,GET
+2. /api/tms/finance/exportVerificBill,POST
+3. /api/tms/finance/verificationWayBills,POST
+4. /api/tms/finance/countVerificBill,GET
+5. /api/tms/finance/ifVerification,GET
+
+----------TmsFinanceReportController.java----------
+1. /api/tms/finance/getIncomeCostConfigList,POST
+2. /api/tms/finance/deleteIncomeCostConfigById,GET
+3. /api/tms/finance/getIncomeCostConfigInfoById,GET
+4. /api/tms/finance/saveOrUpdateIncomeCostConfig,POST
+5. /api/tms/finance/getProfitReportList,POST
+6. /api/tms/finance/getIncomeCostByCondition,GET
+
+----------TmsGoodsDetailsController.java----------
+1. /api/tms/wayBill/getAllGoodsDetails,GET
+2. /api/tms/wayBill/addGoodsDetails,POST
+3. /api/tms/wayBill/updateGoodsDetails,POST
+4. /api/tms/wayBill/delGoodsDetailsById,GET
+5. /api/tms/wayBill/batchAddGoodsDetails,POST
+
+----------TmsIndexController.java----------
+1. /api/tms/index/count,GET
+2. /api/tms/index/getTmsNoticeImg,GET
+3. /api/tms/index/countData,GET
+
+----------TmsLineController.java----------
+1. /api/tms/line/listLine,GET
+2. /api/tms/line/updateLine,POST
+3. /api/tms/line/deleteLineById,POST
+4. /api/tms/line/createLine,POST
+5. /api/tms/line/getDistance,GET
+6. /api/tms/line/getLineById,GET
+7. /api/tms/line/countLineMileage,GET
+
+----------TmsLoanController.java----------
+1. /api/tms/loan/listLargerLoan,GET
+2. /api/tms/loan/createLoan,POST
+3. /api/tms/loan/getCardInfo,GET
+
+----------TmsRepayController.java----------
+1. /api/tms/repay/getRepayList,GET
+2. /api/tms/repay/listBillDetails,GET
+3. /api/tms/repay/getAcctInfoByBillNo,GET
+4. /api/tms/repay/listBillDetails/export,POST
+5. /api/tms/repay/listRecords,GET
+6. /api/tms/repay/getPayResult,GET
+7. /api/tms/repay/getBillInfoJumpPayPage,POST
+8. /api/tms/repay/updatePayRecordByTransId,POST
+9. /api/tms/repay/callByBaoFuNotifyUrl,GET
+10. /api/tms/repay/getRepaymentRecordByCondition,GET
+
+----------TmsReportController.java----------
+1. /api/tms/report/v7/getPaymentReportList,POST
+2. /api/tms/report/v7/exportPaymentReport,POST
+3. /api/tms/report/v7/getPaymentChartData,POST
+4. /api/tms/report/v7/getSendCarReportList,POST
+5. /api/tms/report/v7/exportSendCarReport,POST
+6. /api/tms/report/v7/getSendCarChartData,POST
+7. /api/tms/report/outCarPriceReport,GET
+8. /api/tms/report/exportOutPrice,POST
+9. /api/tms/report/outCarReportTop10Line,GET
+10. /api/tms/report/outCarEchartsDataByLine,GET
+
+----------TmsSupplierController.java----------
+1. /api/tms/supplier/createSupplier,POST
+2. /api/tms/supplier/deleteSupplier,POST
+3. /api/tms/supplier/updateSupplier,POST
+4. /api/tms/supplier/getSupplier,GET
+5. /api/tms/supplier/listSuppliers,GET
+
+----------TmsSystemController.java----------
+1. /api/tms/system/createRole,POST
+2. /api/tms/system/deleteRole,POST
+3. /api/tms/system/updateRole,POST
+4. /api/tms/system/getRole,GET
+5. /api/tms/system/listRoles,GET
+6. /api/tms/system/listTmsRoleByPartnerNo,GET
+7. /api/tms/system/createTmsUser,POST
+8. /api/tms/system/deleteTmsUser,POST
+9. /api/tms/system/updateTmsUser,POST
+10. /api/tms/system/getTmsUserById,GET
+11. /api/tms/system/listTmsUserByPartnerNo,GET
+12. /api/tms/system/updatePassword,POST
+13. /api/tms/system/createDefaultRole,POST
+14. /api/tms/system/refreshMenuJson,GET
+15. /api/tms/system/sms/updateSetting,POST
+16. /api/tms/system/sms/getSetting,GET
+17. /api/tms/system/getSystemParamsSet,GET
+18. /api/tms/system/updateParamsSet,POST
+19. /api/tms/system/listReceiptInfoByPartnerNo,GET
+20. /api/tms/system/deleteReceiptInfoById,POST
+21. /api/tms/system/createReceiptInfo,POST
+22. /api/tms/system/updateReceiptInfo,POST
+23. /api/tms/system/saveCustomizedColumn,POST
+
+----------TmsTmpWayBillController.java----------
+1. /api/tms/tmpWayBill/batchCheckTmpWayBill,GET
+2. /api/tms/tmpWayBill/batchCreateTmpWayBill,POST
+3. /api/tms/tmpWayBill/tmpWayBillList,GET
+4. /api/tms/tmpWayBill/importExcel,POST
+5. /api/tms/tmpWayBill/getTmpWayBillById,GET
+6. /api/tms/tmpWayBill/batchDeleteTmpWayBillByIds,POST
+7. /api/tms/tmpWayBill/updateTmpWayBillById,POST
+8. /api/tms/tmpWayBill/downloadTmpWayBillExcel,POST
+
+----------TmsUserDefinedController.java----------
+1. /api/tms/userDefined/saveOrUpdateCompanyDefinedConfig,POST
+2. /api/tms/userDefined/deleteCompanyDefinedConfig,POST
+3. /api/tms/userDefined/updateUserDefinedConfig,POST
+
+----------TmsWalletController.java----------
+1. /api/tms/wallet/getWalletInfo,GET
+2. /api/tms/wallet/createCompanyInfo,POST
+3. /api/tms/wallet/recharge,POST
+4. /api/tms/wallet/recharge/notify,POST
+5. /api/tms/wallet/listPayment,GET
+6. /api/tms/wallet/cashOutApply,POST
+7. /api/tms/wallet/cashOutApply/notify,POST
+8. /api/tms/wallet/payPwdModify,POST
+9. /api/tms/wallet/pwdAuth,GET
+10. /api/tms/wallet/modifyUserMob,POST
+11. /api/tms/wallet/uploadUnitPhoto,POST
+12. /api/tms/wallet/modifyUnitUser,POST
+13. /api/tms/wallet/modifyUnitUserAcct,POST
+14. /api/tms/wallet/getVerifyCode,GET
+15. /api/tms/wallet/verifyAuthCode,POST
+16. /api/tms/wallet/retrievePwd,POST
+17. /api/tms/wallet/updateSerialNumber,POST
+18. /api/tms/wallet/getCashOutStatus,GET
+19. /api/tms/wallet/exportPaymentExcel,POST
+20. /api/tms/wallet/mapLoginIdAndName,GET
+
+----------TmsWayBillController.java----------
+1. /api/tms/wayBill/wayBillList,GET
+2. /api/tms/wayBill/createWayBill,POST
+3. /api/tms/wayBill/getWayBillDetail,GET
+4. /api/tms/wayBill/getWayBillDetailById,GET
+5. /api/tms/wayBill/exportExcel,POST
+6. /api/tms/wayBill/createManualTrajectory,POST
+7. /api/tms/wayBill/listManualTrajectory,GET
+8. /api/tms/wayBill/listExportMessage,POST
+9. /api/tms/wayBill/getLonAndLat,GET
+10. /api/tms/wayBill/wayBillWarn,POST
+11. /api/tms/wayBill/getIsDriverAPPConfirmStatus,GET
+12. /api/tms/wayBill/ifFinanceUser,GET
+13. /api/tms/wayBill/deleteWayBill,POST
+14. /api/tms/wayBill/getDelWayBillList,GET
+15. /api/tms/wayBill/updateDelWayBillList,POST
+16. /api/tms/wayBill/delPhotoAirWay,POST
+
+----------TmsWayBillPayController.java----------
+1. /api/tms/pay/listPay,GET
+2. /api/tms/pay/getPay,GET
+3. /api/tms/pay/exportPayList,POST
+4. /api/tms/pay/listDeparturePay,GET
+5. /api/tms/pay/exportDeparturePayList,POST
+6. /api/tms/pay/listArrivePay,GET
+7. /api/tms/pay/exportArrivePayList,POST
+8. /api/tms/pay/listReceiptPay,GET
+9. /api/tms/pay/exportReceiptPayList,POST
+10. /api/tms/pay/savePayDetail,POST
+11. /api/tms/pay/updatePayStatusByLoan,POST
+12. /api/tms/pay/countAmt,GET
+13. /api/tms/pay/LoanAmt,GET
+14. /api/tms/pay/single,POST
+15. /api/tms/pay/batche,POST
+16. /api/tms/pay/queryApprovalTotalAmt,GET
+17. /api/tms/pay/updateUserDefinedFee,POST
+18. /api/tms/payqueryTodayCreditApproveLoan,GET
+19. /api/tms/pay/informUpdateWaybill,POST
+
+----------UploadFileController.java----------
+1. /api/tms/upload/uploadFile,POST
+

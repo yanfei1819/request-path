@@ -1,0 +1,331 @@
+文件路径是:F:\workplace\yudian-app\app-core\src\main\java\com\yudianbank\app\web\controller\
+----------AppAdminController.java----------
+1. /app/ftp/img-info/{partnerNo}/{date},GET
+2. /app/version,GET
+3. /app/admin/addAppVersion,GET
+4. /app/admin/addAppVersion,POST
+5. /app/version,POST
+
+----------AppBindCardController.java----------
+1. /app/payment/addCard,POST
+2. /app/payment/sendVerifyCode,GET
+3. /app/payment/checkVerifyCode,POST
+4. /app/payment/cardInfo,GET
+5. /app/payment/v1/cardInfo,GET
+6. /app/payment/v1/addCard,POST
+7. /app/payment/v1/confirmVerifyCode,POST
+8. /app/payment/v1/balanceAndCardInfo,GET
+9. /app/payment/v1/saveInfo,POST
+10. /app/payment/v1/cash,POST
+11. /app/payment/paymentInTimeProcessPolling,GET
+12. /app/payment/paymentInTimeNotify,GET
+13. /app/payment/v1/delCard,POST
+14. /app/payment/v1/sendVerifyCode,GET
+15. /app/payment/v1/checkVerifyCode,POST
+16. /app/payment/v1/setPassword,POST
+17. /app/payment/v1/myWallet,GET
+18. /app/payment/v1/checkPassword,POST
+19. /app/payment/v1/updatePassword,POST
+20. /app/payment/v1/walletDetail,GET
+21. /app/payment/v1/resetPassword,POST
+22. /app/payment/v1/checkSimplePassword,POST
+23. /app/payment/v1/bindLLCardForModifyMobile,POST
+24. /app/payment/getWalletList,GET
+
+----------AppDriverDemandController.java----------
+1. /app/driver/v1/getMyLineList,GET
+2. /app/driver/v1/addMyLine,POST
+3. /app/driver/v1/updateMyLine,POST
+4. /app/driver/v1/deleteMyLine,POST
+5. /app/driver/v1/getDemandList,GET
+6. /app/driver/v1/getDemandDetail,GET
+7. /app/driver/v1/grabSingle,POST
+8. /app/driver/v1/recommendTracking,GET
+9. /app/driver/v1/wayBillDetail,GET
+10. /app/driver/v1/quoteAuthority,POST
+
+----------AppMessageController.java----------
+1. /app/payment/cancelPush,GET
+2. /app/payment/myMessage,GET
+3. /app/payment/pushMessage,POST
+
+----------AppPaymentReceiverController.java----------
+1. /app/payment/v1/validatePayment,POST
+2. /app/payment/getReceiverList,GET
+3. /app/payment/v1/openPayment,POST
+4. /app/payment/v1/confirmOpenPayment,POST
+5. /app/payment/v1/closeOpenPayment,POST
+6. /app/payment/v1/getPaymentReceiver,GET
+
+----------CompanyCarController.java----------
+1. /app/company/car/getCar,GET
+
+----------FaceToAppCarController.java----------
+1. /app/cars,POST
+2. /app/cars,DELETE,GET
+3. /app/cars/delete,POST
+
+----------FaceToAppController.java----------
+1. /app/mobile/verifyCode,GET
+2. /app/mobile/isUsed/{mobile},GET
+3. /app/mobile,PUT,GET
+4. /app/wayBill/{partnerNo}/{mobile},GET
+5. /app/logistics,POST
+6. /app/logistics,GET
+7. /app/searchLogistics,POST
+8. /app/getPartnerLogo,GET
+9. /app/admin/partnerLogo,GET
+10. /app/admin/partnerLogo,POST
+11. /app/partnerList,GET
+12. /app/showBlankProtocol/{partnerNo}/{protocolType},GET
+13. /app/erp/update,GET
+
+----------FaceToAppCreditController.java----------
+1. /app/credit,POST
+2. /app/loan,POST
+3. /app/credit/validate,GET
+4. /app/loan/verifyCode,GET
+5. /app/credit/callback,POST
+6. /app/loan/callback,POST
+7. /app/loaned/callback,POST
+8. /app/allinpayErrorCallback,POST
+9. /app/paied/callback,POST
+
+----------FaceToAppUsrController.java----------
+1. /app/verifyCode,GET
+2. /app/usr,POST
+3. /app/usr,GET
+4. /app/addReference,POST
+5. /app/user/certificate,POST
+6. /app/uploadFile,POST
+7. /app/driver/v1/loginToken,POST
+8. /app/certificate,POST
+9. /app/certificate/upload,POST
+10. /app/driverRegister,POST
+11. /app/getIdCardPhoto,GET
+12. /app/getAdImg,GET
+13. /app/uploadUserData,POST
+
+----------GlobalConfigController.java----------
+1. /app/globalConfig,GET
+2. /app/admin/globalConfig,POST
+3. /app/admin/globalConfig,GET
+
+----------GPSController.java----------
+1. /app/gps,POST
+2. /app/help/feedback,POST
+3. /app/get/feedback,GET
+4. /app/get/gps,GET
+5. /app/get/gps/{mobile}/{startTime}/{endTime},GET
+6. /app/get/gps1/{mobile}/{limit}/{hour},GET
+
+----------InformationPlatformController.java----------
+1. /app/informationPlatform/listSourceGoods,GET
+2. /app/informationPlatform/getSourceGoods,GET
+3. /app/informationPlatform/countCall,GET
+4. /app/informationPlatform/countNewList,POST
+
+----------PDAppToLCAppController.java----------
+1. /app/pd/usr,POST
+2. /app/pd/certificate,POST
+3. /app/pd/getToken,POST
+4. /app/pd/cars,POST
+5. /app/pd/loanReq,POST
+6. /app/pd/getTransPort,GET
+7. /app/pd/delWayBill,POST
+
+----------PenalsumPaymentContoller.java----------
+1. /app/driver/v1/getOrderNo,GET
+2. /app/driver/v1/getPaymentParam,GET
+3. /app/driver/v1/payNotify,POST
+4. /app/driver/v1/getStatusByOrderNo,GET
+
+----------RpcTestController.java----------
+1. /app/rpc/callCredit,POST
+2. /app/rpc/callLoan,POST
+3. /app/rpc/usr,POST
+4. /app/rpc/limit,POST
+
+文件路径是:F:\workplace\yudian-app\app-core\src\main\java\com\yudianbank\carLoan\web\controller\
+----------AppCarLoanController.java----------
+1. /app/driver/v1/getPaymentPlan,GET
+2. /app/driver/v1/overdueRepayment,POST
+3. /app/driver/v1/repayment,POST
+4. /app/driver/v1/loanBuyCar,POST
+5. /app/driver/v1/getBuyCarTransactionDetails,GET
+6. /app/driver/v1/getBuyCarRepayment,GET
+7. /app/driver/v1/addBuyCarTransactionDetails,POST
+
+文件路径是:F:\workplace\yudian-app\app-core\src\main\java\com\yudianbank\common\web\controller\
+----------AppConfigController.java----------
+1. /app/common/v1/getConfigParam,GET
+
+----------AppNoticeController.java----------
+1. /app/common/v1/getNoticeList,GET
+2. /app/common/v1/closeNotice/{id},POST
+
+----------TaskCallbackController.java----------
+1. /app/common/task/callback,GET
+
+----------TestController.java----------
+1. /test/updateMyline,GET
+2. /test/getUfileToken,GET
+3. /test/getUrl,GET
+4. /test/getEmailFlag,GET
+5. /test/setEmailFlag,GET
+
+----------UploadFileController.java----------
+1. /app/common/upload/driverUploadFile,POST
+
+文件路径是:F:\workplace\yudian-app\app-core\src\main\java\com\yudianbank\driverLoan\controller\
+----------DriverLoanController.java----------
+1. /app/driverLoan/applyDriverLoan,POST
+2. /app/driverLoan/countApply,GET
+3. /app/driverLoan/isCarLoanDriver,GET
+4. /app/driverLoan/getApplyStatus,GET
+5. /app/driverLoan/openDriverLoan,POST
+6. /app/driverLoan/getOpenDriverLoanInfo,GET
+7. /app/driverLoan/getDriverAmountLimit,GET
+8. /app/driverLoan/listDriverMsg,GET
+9. /app/driverLoan/getShallRepay,GET
+10. /app/driverLoan/listDriverLoan,GET
+11. /app/driverLoan/getDriverLoan,GET
+12. /app/driverLoan/getDriverLoanRepayPlan,GET
+13. /app/driverLoan/getExpensePhoto,GET
+14. /app/driverLoan/updateExpensePhoto,POST
+15. /app/driverLoan/getAllLoanDesc,GET
+16. /app/driverLoan/getRepayRate,GET
+17. /app/driverLoan/validateRepayAcct,GET
+18. /app/driverLoan/listDriverLoanRepay,GET
+19. /app/driverLoan/getDriverLoanRepay,GET
+20. /app/driverLoan/savePosition,POST
+21. /app/driverLoan/getAllStateAndPlan,GET
+
+文件路径是:F:\workplace\yudian-app\app-core\src\main\java\com\yudianbank\electricSign\controller\
+----------ElectricSignController.java----------
+1. /app/electricSign/signAgreement,GET
+2. /app/electricSign/driverLoadSignAgreement,POST
+3. /app/electricSign/viewConstract,GET
+4. /app/electricSign/specialLine/confirmDrawings,POST
+5. /app/electricSign/driverLoadConfirmDrawings,POST
+6. /app/electricSign/autoSignByTemplate,POST
+
+文件路径是:F:\workplace\yudian-app\app-core\src\main\java\com\yudianbank\shipper\web\controller\
+----------AuthenticationController.java----------
+1. /app/shipper/isCertifacate,GET
+2. /app/shipper/certification,POST
+3. /app/shipper/getCarsByRoutes,GET
+
+----------CreditWithCarController.java----------
+1. /app/shipper/getPacticeCars,GET
+2. /app/shipper/getCars,GET
+3. /app/shipper/getTmsAndAppCars,GET
+4. /app/shipper/addPacticeCars,POST
+5. /app/shipper/followCar,POST
+6. /app/shipper/creditPortrait,GET
+7. /app/shipper/getApplyRecords,GET
+8. /app/shipper/addRoutes,POST
+9. /app/shipper/getRoutes,GET
+10. /app/shipper/deleteRoutes,POST
+11. /app/shipper/getCertificationInfo,GET
+12. /app/shipper/isPartner,GET
+13. /app/shipper/getWayBillList,GET
+
+----------ShipperLocateController.java----------
+1. /app/shipper/openPosition,POST
+2. /app/shipper/accuratePosition,POST
+3. /app/shipper/openPositionCallBack,GET
+4. /app/shipper/openPosition,GET
+5. /app/shipper/closePosition,GET
+6. /app/shipper/Position,GET
+7. /app/shipper/PositionStatus,GET
+8. /app/shipper/timedPosition,GET
+9. /app/shipper/updatePositionAccount,GET
+10. /app/shipper/updateWhiteList,GET
+11. /app/shipper/getWayBillTrajectory,GET
+12. /app/shipper/startPositionTemp,GET
+13. /app/shipper/statisticsShipperData,GET
+14. /app/shipper/openPositionTask,GET
+
+----------ShipperUserController.java----------
+1. /app/shipper/verifyCode/{type}/{phoneNum},GET
+2. /app/shipper/register,POST
+3. /app/shipper/register/pwd,POST
+4. /app/shipper/login,POST
+5. /app/shipper/findPwdOne,POST
+6. /app/shipper/findPwdTwo,POST
+7. /app/shipper/uploadFile,POST
+8. /app/shipper/validOldPwd,POST
+9. /app/shipper/updatePwd,POST
+10. /app/shipper/createShipperUser,POST
+
+----------ShipperWayBillController.java----------
+1. /app/payment/saveWayBill,POST
+2. /app/payment/wayBillList,GET
+3. /app/payment/v1/updateTransport,POST
+4. /app/payment/v2/updateTransport,POST
+5. /app/payment/delWayBill,POST
+6. /app/payment/tmsDelWayBill,POST
+7. /app/payment/hasCertifacateAndWallet,GET
+8. /app/payment/v1/hasCertifacateAndWallet,GET
+9. /app/payment/confirmWayBill,POST
+10. /app/payment/personCenter,GET
+11. /app/payment/tmsConfirmWayBill,POST
+12. /app/payment/confirmStation,POST
+13. /app/payment/confirmWayComplete,POST
+14. /app/payment/tmsBillCode,GET
+15. /app/payment/delK,GET
+16. /app/payment/getReceiptMsg,GET
+17. /app/payment/confirmReceiptV2,POST
+18. /app/payment/confirmReceipt,POST
+19. /app/payment/transferPositionData,GET
+20. /app/payment/transferCarNoData,GET
+
+----------TransportDemandController.java----------
+1. /app/shipper/v1/createFindCarDemand,POST
+2. /app/shipper/v1/createFindCarDemandFromAppMgm,POST
+3. /app/shipper/v1/getDemandList,GET
+4. /app/shipper/exportLookForCarList,POST
+5. /app/shipper/v1/getReceiveDrivers,GET
+6. /app/shipper/v1/appMgmGetDemandList,GET
+7. /app/shipper/v1/getOrderReceiveList,GET
+8. /app/shipper/v1/cancelDemand/{id},GET
+9. /app/shipper/v1/isQuoteValid,POST
+10. /app/shipper/uploadReceipt,POST
+11. /app/shipper/listCargoName,GET
+12. /app/shipper/historyLine,GET
+
+文件路径是:F:\workplace\yudian-app\app-core\src\main\java\com\yudianbank\specialLine\web\controller\
+----------PartnerSpecialLineController.java----------
+1. /app/partnerSpecialLineLoad/getRepayRate,POST
+2. /app/partnerSpecialLineLoad/getAllLoanDesc,POST
+3. /app/partnerSpecialLineLoad/openSpecialLineLoan,POST
+4. /app/partnerSpecialLineLoad/getApplyStatus,GET
+5. /app/partnerSpecialLineLoad/getUnreadNumber,GET
+6. /app/partnerSpecialLineLoad/getSpecialLineAmountLimit,GET
+7. /app/partnerSpecialLineLoad/listSpecialLineMsg,GET
+8. /app/partnerSpecialLineLoad/getShallRepay,GET
+9. /app/partnerSpecialLineLoad/listSpecialLineLoan,GET
+10. /app/partnerSpecialLineLoad/getSpecialLineLoan,GET
+11. /app/partnerSpecialLineLoad/getSpecialLineRepayPlan,GET
+12. /app/partnerSpecialLineLoad/acceptanceCallBack,POST
+13. /app/partnerSpecialLineLoad/listSpecialLineRepay,GET
+14. /app/partnerSpecialLineLoad/getSpecialLineRepay,GET
+
+----------SpecialLineBankController.java----------
+1. /app/specialLine/isBindBank,GET
+2. /app/specialLine/validateCard,POST
+3. /app/specialLine/getVerifyCode/{mobileNo},GET
+4. /app/specialLine/isVerifyCode,POST
+5. /app/specialLine/bankList,GET
+6. /app/specialLine/updateCard,POST
+7. /app/specialLine/detailCard/{id},GET
+8. /app/specialLine/joinLoanValid,POST
+
+----------SpecialLineController.java----------
+1. /app/specialLine/getAmountLimit,GET
+2. /app/specialLine/saveApecialApply,POST
+3. /app/specialLine/loan/callback,POST
+4. /app/specialLine/getBorrowedList,GET
+5. /app/specialLine/getBorrowedRecords,POST
+

@@ -1,0 +1,11 @@
+1./app/ftp/img-info/{partnerNo}/{date},GET
+2./app/mobile/isUsed/{mobile},GET
+4./app/wayBill/{partnerNo}/{mobile},GET
+12./app/showBlankProtocol/{partnerNo}/{protocolType},GET
+5./app/get/gps/{mobile}/{startTime}/{endTime},GET
+6./app/get/gps1/{mobile}/{limit}/{hour},GET
+2./app/common/v1/closeNotice/{id},POST
+1./app/shipper/verifyCode/{type}/{phoneNum},GET
+8./app/shipper/v1/cancelDemand/{id},GET
+3./app/specialLine/getVerifyCode/{mobileNo},GET
+7./app/specialLine/detailCard/{id},GET
