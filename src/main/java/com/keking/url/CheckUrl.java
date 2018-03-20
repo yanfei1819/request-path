@@ -14,10 +14,10 @@ import java.util.Set;
  */
 public class CheckUrl {
     // 标准路径
-    private static final String STANDARD_PATH = FileUtil.getAbsolutePath() + "\\src\\dataURL\\standard.json";
+    private static final String STANDARD_PATH = FileUtil.getAbsolutePath() + "\\src\\main\\resources\\data\\standard.json";
 
     // 被读取的路径
-    private static final String TMS_PATH = FileUtil.getAbsolutePath() + "\\src\\dataURL\\controllerMapping.json";
+    private static final String TMS_PATH = FileUtil.getAbsolutePath() + "\\src\\main\\resources\\data\\controllerMapping.json";
 
     /**
      * 对比接口路径

@@ -1,0 +1,1779 @@
+[
+  {
+    "menuName": "首页",
+    "menuCode": 10000,
+    "uri": "/api/tms/index/count",
+    "menus": [
+      {
+        "menuName": "首页-运单查询",
+        "menuCode": 10001,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "首页-运单查询-运输中运单",
+            "menuCode": 10002,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "首页-运单查询-昨日新增运单",
+            "menuCode": 10003,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "首页-运单查询-本月累计运单",
+            "menuCode": 10004,
+            "uri": "null",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "首页-运单支付",
+        "menuCode": 10005,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "首页-运单支付-待审批的运单",
+            "menuCode": 10006,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "首页-运单支付-尾款运费待支付",
+            "menuCode": 10007,
+            "uri": "null",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "首页-我的账户",
+        "menuCode": 10008,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "首页-我的账户-已申请笔数",
+            "menuCode": 10009,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "首页-我的账户-申请提款金额（元）",
+            "menuCode": 10010,
+            "uri": "null",
+            "menus": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menuName": "运单管理",
+    "menuCode": 11000,
+    "uri": "null",
+    "menus": [
+      {
+        "menuName": "运单管理-运单查询",
+        "menuCode": 11201,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "运单管理-运单查询-搜索图标",
+            "menuCode": 11202,
+            "uri": "/api/tms/wayBill/wayBillList?status=S",
+            "menus": null
+          },
+          {
+            "menuName": "运单管理-运单查询-查询运单按钮",
+            "menuCode": 11203,
+            "uri": "/api/tms/wayBill/wayBillList?status=S",
+            "menus": null
+          },
+          {
+            "menuName": "运单管理-运单查询-重置条件按钮",
+            "menuCode": 11204,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运单管理-运单查询-导出Excel按钮",
+            "menuCode": 11205,
+            "uri": "/api/tms/driver/listTmsAppDriver",
+            "menus": [
+              {
+                "menuName": "运单管理-运单查询-导出Excel按钮的查询功能",
+                "menuCode": 11206,
+                "uri": "/api/tms/driver/listDrivers",
+                "menus": null
+              },
+              {
+                "menuName": "运单管理-运单查询-导出Excel按钮的导出功能",
+                "menuCode": 11207,
+                "uri": "/app/approval/exportExcel",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单管理-运单查询-运单编号查看详情",
+            "menuCode": 11213,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "运单管理-运单查询-运单编号查看详情-进入详情页",
+                "menuCode": 11214,
+                "uri": "/api/tms/wayBill/getWayBillDetail",
+                "menus": null
+              },
+              {
+                "menuName": "运单管理-运单查询-运单编号查看详情-上传文件",
+                "menuCode": 11215,
+                "uri": "null",
+                "menus": null
+              },
+              {
+                "menuName": "运单管理-运单查询-运单编号查看详情-修改后的保存",
+                "menuCode": 11216,
+                "uri": "/payment/v1/updateTransport",
+                "menus": [
+                  {
+                    "menuName": "运单管理-运单查询-运单编号查看详情-保存-获取运单列表",
+                    "menuCode": 11217,
+                    "uri": "/api/tms/wayBill/wayBillList?status=S",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "运单管理-运单查询-运单编号查看详情-关闭",
+                "menuCode": 11218,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "menuName": "运单-我要录单",
+        "menuCode": 11100,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "运单-我要录单-外请车承运司机-新建按钮",
+            "menuCode": 11101,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "运单-我要录单-外请车新建-确认手机号",
+                "menuCode": 11102,
+                "uri": "/shipper/getCars",
+                "menus": null
+              },
+              {
+                "menuName": "运单-我要录单-外请车新建-保存",
+                "menuCode": 11103,
+                "uri": "/api/tms/driver/createTmsAppDriver/all",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-我要录单-外请车承运司机-选择按钮",
+            "menuCode": 11104,
+            "uri": "/api/tms/driver/listTmsAppDriver",
+            "menus": [
+              {
+                "menuName": "外请车-列表查询",
+                "menuCode": 11105,
+                "uri": "/api/tms/driver/listTmsAppDriver",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-我要录单-外请车供应商-选择按钮",
+            "menuCode": 11106,
+            "uri": "/api/tms/supplier/listSuppliers",
+            "menus": [
+              {
+                "menuName": "运单-我要录单-外请车供应商-选择按钮-外请车供应商-查询按钮",
+                "menuCode": 11107,
+                "uri":  "/api/tms/supplier/listSuppliers",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-我要录单-公司车承运司机-选择按钮",
+            "menuCode": 11150,
+            "uri": "/api/tms/driver/listTmsAppDriver",
+            "menus": [
+              {
+                "menuName": "公司车承运司机-查询按钮",
+                "menuCode": 11151,
+                "uri": "/api/tms/driver/listDrivers",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-我要录单-公司车承运车辆-选择按钮",
+            "menuCode": 11152,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "公司车承运车辆-查询按钮",
+                "menuCode": 11153,
+                "uri": "/api/tms/car/listCars",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-我要录单-提交按钮",
+            "menuCode": 11154,
+            "uri": "/api/tms/wayBill/createWayBill",
+            "menus": null
+          },
+          {
+            "menuName": "运单-我要录单-取消按钮",
+            "menuCode": 11155,
+            "uri": "/payment/wayBillList",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "运单-运单跟踪",
+        "menuCode": 11300,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "运单-运单跟踪-查询运单",
+            "menuCode": 11301,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "运单-运单跟踪查询-获取列表",
+                "menuCode": 11302,
+                "uri": "/api/tms/wayBill/wayBillList",
+                "menus": null
+              },
+              {
+                "menuName": "运单-运单跟踪查询-获取跟踪路线",
+                "menuCode": 11303,
+                "uri": "/shipper/getWayBillTrajectory",
+                "menus": null
+              },
+              {
+                "menuName": "运单-运单跟踪查询-获取跟踪备注",
+                "menuCode": 11304,
+                "uri": "/api/tms/wayBill/listManualTrajectory",
+                "menus": null
+              },
+              {
+                "menuName": "运单-运单跟踪查询-地址转坐标",
+                "menuCode": 11305,
+                "uri": "/api/tms/wayBill/getLonAndLat",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-运单跟踪-批量导出跟踪信息",
+            "menuCode": 11306,
+            "uri": "/api/tms/wayBill/listExportMessage",
+            "menus": null
+          },
+          {
+            "menuName": "运单-运单跟踪-查看运单轨迹",
+            "menuCode": 11307,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "运单-运单跟踪-查看运单轨迹-查看跟踪记录",
+                "menuCode": 11308,
+                "uri": "/shipper/getWayBillTrajectory",
+                "menus": null
+              },
+              {
+                "menuName": "运单-运单跟踪-查看运单轨迹-查看跟踪备注",
+                "menuCode": 11309,
+                "uri": "/api/tms/wayBill/listManualTrajectory",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-运单跟踪-导出单条跟踪信息",
+            "menuCode": 113010,
+            "uri": "/api/tms/wayBill/listExportMessage",
+            "menus": null
+          },
+          {
+            "menuName": "运单-运单跟踪-添加跟踪备注",
+            "menuCode": 11311,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "运单-运单跟踪-添加跟踪备注-提交",
+                "menuCode": 11312,
+                "uri": "/api/tms/wayBill/createManualTrajectory",
+                "menus": null
+              },
+              {
+                "menuName": "运单-运单跟踪-添加跟踪备注-取消",
+                "menuCode": 11313,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-运单跟踪-手动定位",
+            "menuCode": 11314,
+            "uri": "/shipper/openPosition",
+            "menus": null
+          },
+          {
+            "menuName": "运单-运单跟踪-刷新地图",
+            "menuCode": 11315,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "运单-运单跟踪-刷新地图-查看跟踪记录",
+                "menuCode": 11316,
+                "uri": "/shipper/getWayBillTrajectory",
+                "menus": null
+              },
+              {
+                "menuName": "运单-运单跟踪-刷新地图-查看跟踪备注",
+                "menuCode": 11317,
+                "uri": "/api/tms/wayBill/listManualTrajectory",
+                "menus": null
+              },
+              {
+                "menuName": "运单-运单跟踪-刷新地图-地址转坐标",
+                "menuCode": 11318,
+                "uri": "/api/tms/wayBill/getLonAndLat",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-运单跟踪-分页按钮",
+            "menuCode": 11319,
+            "uri": "/payment/wayBillList",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "运单-发车确认",
+        "menuCode": 11400,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "运单-发车确认-查询运单",
+            "menuCode": 11401,
+            "uri": "/api/tms/wayBill/wayBillList",
+            "menus": null
+          },
+          {
+            "menuName": "运单-发车确认-修改",
+            "menuCode": 11402,
+            "uri": "/api/tms/wayBill/getWayBillDetail",
+            "menus": [
+              {
+                "menuName": "运单-发车确认-修改-保存",
+                "menuCode": 11403,
+                "uri": "null",
+                "menus": null
+              },
+              {
+                "menuName": "运单-发车确认-修改-关闭",
+                "menuCode": 11404,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-发车确认-发车确认",
+            "menuCode": 11405,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "运单-发车确认-发车确认-确定",
+                "menuCode": 11406,
+                "uri": "null",
+                "menus": [
+                  {
+                    "menuName": "运单-发车确认-发车确认-确定-刷新列表",
+                    "menuCode": 11407,
+                    "uri": "/api/tms/wayBill/wayBillList?status=S",
+                    "menus": null
+                  },
+                  {
+                    "menuName": "运单-发车确认-发车确认-确定-提交确认信息",
+                    "menuCode": 11408,
+                    "uri": "/payment/tmsConfirmWayBill",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "运单-发车确认-发车确认-取消",
+                "menuCode": 11409,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-发车确认-取消运单",
+            "menuCode": 11220,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "运单-发车确认-取消运单-确定",
+                "menuCode": 11411,
+                "uri": "null",
+                "menus": [
+                  {
+                    "menuName": "运单-发车确认-取消运单-确定-提交取消运单信息",
+                    "menuCode": 11222,
+                    "uri": "payment/tmsDelWayBill",
+                    "menus": null
+                  },
+                  {
+                    "menuName": "运单-发车确认-取消运单-确定-提交取消运单信息后刷新列表",
+                    "menuCode": 11221,
+                    "uri": "/payment/wayBillList",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "运单-发车确认-取消运单-取消",
+                "menuCode": 11223,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-发车确认-重置条件",
+            "menuCode": 11219,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运单-发车确认-新建运单",
+            "menuCode": 11416,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运单-发车确认-导出Excel",
+            "menuCode": 11417,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "运单-发车确认-导出Excel-查询运单",
+                "menuCode": 11418,
+                "uri": "/api/tms/wayBill/wayBillList",
+                "menus": null
+              },
+              {
+                "menuName": "运单-发车确认-导出Excel-导出运单",
+                "menuCode": 11419,
+                "uri": "/api/tms/wayBill/exportExcel",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-发车确认-分页",
+            "menuCode": 11420,
+            "uri": "/payment/wayBillList",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "运单-运单管理-到达确认",
+        "menuCode": 11208,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "运单-运单管理-到达确认-确认",
+            "menuCode": 11209,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "运单-运单管理-到达确认-刷新列表",
+                "menuCode": 11210,
+                "uri": "/payment/wayBillList",
+                "menus": null
+              },
+              {
+                "menuName": "运单-运单管理-到达确认-提交确认信息",
+                "menuCode": 11211,
+                "uri": "/payment/confirmWayComplete",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-运单管理-到达确认-取消",
+            "menuCode": 11212,
+            "uri": "null",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "运单-回单录入",
+        "menuCode": 11600,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "运单-回单录入-查询运单",
+            "menuCode": 11601,
+            "uri": "/api/tms/wayBill/wayBillList",
+            "menus": null
+          },
+          {
+            "menuName": "运单-回单录入-重置条件",
+            "menuCode": 11602,
+            "uri": null,
+            "menus": null
+          },
+          {
+            "menuName": "运单-回单录入-回单上传",
+            "menuCode": 11603,
+            "uri": "/api/tms/wayBill/getWayBillDetail",
+            "menus": [
+              {
+                "menuName": "运单-回单录入-回单上传-确认",
+                "menuCode": 11604,
+                "uri": "/shipper/uploadReceipt",
+                "menus": null
+              },
+              {
+                "menuName": "运单-回单录入-回单上传-取消",
+                "menuCode": 11605,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-回单录入-回单确认",
+            "menuCode": 11606,
+            "uri": "/payment/getReceiptMsg",
+            "menus": [
+              {
+                "menuName": "运单-回单录入-回单确认-确认",
+                "menuCode": 11607,
+                "uri": "/payment/confirmReceipt",
+                "menus": null
+              },
+              {
+                "menuName": "运单-回单录入-回单确认-取消",
+                "menuCode": 11608,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "运单-回单录入-分页",
+            "menuCode": 11609,
+            "uri": "/payment/wayBillList",
+            "menus": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menuName": "运费支付",
+    "menuCode": 14000,
+    "uri": "null",
+    "menus": [
+      {
+        "menuName": "运费支付-支付查询",
+        "menuCode": 14100,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "运费支付-支付查询-全局模糊查询",
+            "menuCode": 14101,
+            "uri": "/api/tms/pay/listPay",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-支付查询-高级查询",
+            "menuCode": 14102,
+            "uri": "/api/tms/pay/listPay",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-发车支付-重置条件",
+            "menuCode": 14103,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-支付查询-导出Execl",
+            "menuCode": 14104,
+            "uri": "/api/tms/pay/exportPayList",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-支付查询-支付详情",
+            "menuCode": 14105,
+            "uri": "/api/tms/pay/getPay",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "运费支付-发车支付",
+        "menuCode": 14200,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "运费支付-发车支付-查询运单",
+            "menuCode": 14201,
+            "uri": "/api/tms/pay/listPay",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-发车支付-支付",
+            "menuCode": 14202,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-发车支付-重置条件",
+            "menuCode": 14211,
+            "uri": "null",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "运费支付-到达支付",
+        "menuCode": 14300,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "运费支付-到达支付-查询运单",
+            "menuCode": 14301,
+            "uri": "/api/tms/pay/listPay",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-到达支付-支付",
+            "menuCode": 14302,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-到达支付-重置条件",
+            "menuCode": 14310,
+            "uri": "null",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "运费支付-尾款支付",
+        "menuCode": 14400,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "运费支付-尾款支付-查询运单",
+            "menuCode": 14401,
+            "uri": "/api/tms/pay/listPay",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-尾款支付-支付",
+            "menuCode": 14402,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-尾款支付-重置条件",
+            "menuCode": 14410,
+            "uri": "null",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName":"运费支付—支付模块-支付",
+        "menuCode": 14500,
+        "uri": "null",
+        "menus":[
+          {
+            "menuName": "运费支付-运费支付-支付-获取钱包余额",
+            "menuCode": 14203,
+            "uri": "/api/tms/wallet/getWalletInfo",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-运费支付-支付-白条付司机",
+            "menuCode": 14204,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-运费支付-支付-余额付司机",
+            "menuCode": 14205,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-运费支付-支付-贷款付商户",
+            "menuCode": 14206,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-运费支付-支付-线下支付",
+            "menuCode": 14207,
+            "uri": "null",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-运费支付-支付-单条支付确认",
+            "menuCode": 14208,
+            "uri": "/api/tms/kekingPay/single",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-运费支付-支付-批量支付确认",
+            "menuCode": 14209,
+            "uri": "/api/tms/kekingPay/batche",
+            "menus": null
+          },
+          {
+            "menuName": "运费支付-运费支付-支付-钱包充值",
+            "menuCode": 14210,
+            "uri": "null",
+            "menus": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menuName": "金融服务",
+    "menuCode": 13000,
+    "uri": "null",
+    "menus": [
+      {
+        "menuName": "金融服务-大额放款申请",
+        "menuCode": 13700,
+        "uri": "/api/tms/loan/listLargerLoan",
+        "menus": [
+          {
+            "menuName": "金融服务-大额放款申请-查询贷款",
+            "menuCode": 13701,
+            "uri":"/api/tms/loan/listLargerLoan",
+            "menus": null
+          },
+          {
+            "menuName": "金融服务-大额放款申请-新建贷款申请",
+            "menuCode": 13702,
+            "uri": "/api/tms/loan/getCardInfo",
+            "menus": [
+              {
+                "menuName": "金融服务-大额放款申请-新建贷款申请-提交申请",
+                "menuCode": 13703,
+                "uri": "/api/tms/loan/createLoan",
+                "menus": null
+              },
+              {
+                "menuName": "金融服务-大额放款申请-新建贷款申请-返回",
+                "menuCode": 13704,
+                "uri": "/api/tms/loan/listLargerLoan",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "金融服务-大额放款申请-分页",
+            "menuCode": 13705,
+            "uri": "/api/tms/loan/listLargerLoan",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "金融服务-我的账户",
+        "menuCode": 13800,
+        "uri": "/api/tms/wallet/getWalletInfo",
+        "menus": [
+          {
+            "menuName": "金融服务-我的账户-企业钱包",
+            "menuCode":13801,
+            "uri": "/api/tms/wallet/getWalletInfo",
+            "menus":[
+              {
+                "menuName": "金融服务-我的账户-企业钱包-钱包注册",
+                "menuCode":13802,
+                "uri": "",
+                "menus":[
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-实名认证-钱包用户查询",
+                    "menuCode":13803,
+                    "uri": "/api/tms/wallet/getWalletInfo",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-实名认证-企业基本信息提交",
+                    "menuCode":13804,
+                    "uri": "/api/tms/wallet/createCompanyInfo",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-实名认证-企业证件照上传",
+                    "menuCode":13805,
+                    "uri": "/api/tms/wallet/uploadUnitPhoto",
+                    "menus":null
+                  }
+                ]
+              },
+              {
+                "menuName": "金融服务-我的账户-企业钱包-重新实名认证",
+                "menuCode":13806,
+                "uri": "",
+                "menus":null
+              },
+              {
+                "menuName": "金融服务-我的账户-企业钱包-充值",
+                "menuCode":13807,
+                "uri": "",
+                "menus":null
+              },
+              {
+                "menuName": "金融服务-我的账户-企业钱包-提现",
+                "menuCode":13808,
+                "uri": "/api/tms/wallet/getWalletInfo",
+                "menus":[
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-提现-确认提现",
+                    "menuCode":13809,
+                    "uri": "/api/tms/wallet/cashOutApply",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-提现-返回企业钱包",
+                    "menuCode":138010,
+                    "uri": "",
+                    "menus":null
+                  }
+                ]
+              },
+              {
+                "menuName": "金融服务-我的账户-企业钱包-查询交易记录",
+                "menuCode":13811,
+                "uri": "/api/tms/wallet/getWalletInfo",
+                "menus":[
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-查询交易记录-查询",
+                    "menuCode":13812,
+                    "uri": "",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-查询交易记录-今天",
+                    "menuCode":13813,
+                    "uri": "",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-查询交易记录-最近7天",
+                    "menuCode":13814,
+                    "uri": "",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-查询交易记录-最近15天",
+                    "menuCode":13815,
+                    "uri": "",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-查询交易记录-最近一个月",
+                    "menuCode":13816,
+                    "uri": "",
+                    "menus":null
+                  }
+                ]
+              },
+              {
+                "menuName": "金融服务-我的账户-企业钱包-修改支付密码",
+                "menuCode":13817,
+                "uri": "",
+                "menus":[
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-修改支付密码-确认修改",
+                    "menuCode":13818,
+                    "uri": "/api/tms/wallet/payPwdModify",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-修改支付密码-返回企业钱包",
+                    "menuCode":13819,
+                    "uri": "",
+                    "menus":null
+                  }
+                ]
+              },
+              {
+                "menuName": "金融服务-我的账户-企业钱包-找回支付密码",
+                "menuCode":13820,
+                "uri": "",
+                "menus":[
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-找回支付密码-获取验证码",
+                    "menuCode":13821,
+                    "uri": "/api/tms/wallet/getVerifyCode",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-找回支付密码-验证",
+                    "menuCode":13822,
+                    "uri": "/api/tms/wallet/verifyAuthCode",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-找回支付密码-确认",
+                    "menuCode":13823,
+                    "uri": "/api/tms/wallet/retrievePwd",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-找回支付密码-返回企业钱包",
+                    "menuCode":13824,
+                    "uri": "",
+                    "menus":null
+                  }
+                ]
+              },
+              {
+                "menuName": "金融服务-我的账户-企业钱包-修改绑定手机",
+                "menuCode":13825,
+                "uri": "",
+                "menus":[
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-修改绑定手机-验证",
+                    "menuCode":13826,
+                    "uri": "/api/tms/wallet/pwdAuth",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-修改绑定手机-确认",
+                    "menuCode":13827,
+                    "uri": "/api/tms/wallet/modifyUserMob",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-修改绑定手机-返回企业钱包",
+                    "menuCode":13828,
+                    "uri": "",
+                    "menus":null
+                  },
+                  {
+
+                    "menuName": "金融服务-我的账户-企业钱包-修改绑定手机-重新验证并修改",
+                    "menuCode":13829,
+                    "uri": "",
+                    "menus":null
+
+                  }
+                ]
+              },
+              {
+                "menuName": "金融服务-我的账户-企业钱包-企业基本信息修改",
+                "menuCode":13830,
+                "uri": "",
+                "menus":[
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-企业基本信息修改-验证",
+                    "menuCode":13831,
+                    "uri": "/api/tms/wallet/pwdAuth",
+                    "menus":[
+                      {
+                        "menuName": "金融服务-我的账户-企业钱包-企业基本信息修改-验证-获取企业信息",
+                        "menuCode":13832,
+                        "uri": "/api/tms/wallet/getWalletInfo",
+                        "menus":null
+                      }
+                    ]
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-企业基本信息修改-确认修改",
+                    "menuCode":13833,
+                    "uri": "/api/tms/wallet/modifyUnitUser",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-企业基本信息修改-返回企业钱包",
+                    "menuCode":13834,
+                    "uri": "",
+                    "menus":null
+                  }
+                ]
+              },
+              {
+                "menuName": "金融服务-我的账户-企业钱包-对公银行账户修改",
+                "menuCode":13835,
+                "uri": "",
+                "menus":[
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-对公银行账户修改-验证",
+                    "menuCode":13836,
+                    "uri": "/api/tms/wallet/pwdAuth",
+                    "menus":[
+                      {
+                        "menuName": "金融服务-我的账户-企业钱包-对公银行账户修改-验证-获取对公账户信息",
+                        "menuCode":13837,
+                        "uri": "/api/tms/wallet/getWalletInfo",
+                        "menus":null
+                      }
+                    ]
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-对公银行账户修改-确认修改",
+                    "menuCode":13838,
+                    "uri": "/api/tms/wallet/modifyUnitUserAcct",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-对公银行账户修改-返回企业钱包",
+                    "menuCode":13839,
+                    "uri": "",
+                    "menus":null
+                  },
+                  {
+                    "menuName": "金融服务-我的账户-企业钱包-对公银行账户修改-重新修改",
+                    "menuCode":13840,
+                    "uri": "",
+                    "menus":null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+
+            "menuName": "金融服务-我的账户-凯京授信账户",
+            "menuCode":13841,
+            "uri": "",
+            "menus":null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menuName": "车辆",
+    "menuCode": 12000,
+    "uri": "null",
+    "menus": [
+      {
+        "menuName": "车辆-我的车辆",
+        "menuCode": 12100,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "我的车辆-查询车辆",
+            "menuCode": 12101,
+            "uri": "/api/tms/car/listCars",
+            "menus": null
+          },
+          {
+            "menuName": "我的车辆-新增车辆",
+            "menuCode": 12102,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "我的车辆-新增车辆-保存",
+                "menuCode": 12103,
+                "uri": "/api/tms/car/createCar",
+                "menus": null
+              },
+              {
+                "menuName": "我的车辆-新增车辆-返回",
+                "menuCode": 12104,
+                "uri": "/api/tms/car/listCars",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "我的车辆-导入车辆",
+            "menuCode": 12105,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "我的车辆-导入车辆-提交",
+                "menuCode": 12106,
+                "uri": "/api/tms/car/importExcel",
+                "menus": [
+                  {
+                    "menuName": "我的车辆-导入车辆信息",
+                    "menuCode": 12107,
+                    "uri": "/api/tms/car/importExcel",
+                    "menus": null
+                  },
+                  {
+                    "menuName": "我的车辆-导入车辆-刷新列表",
+                    "menuCode": 12108,
+                    "uri": "/api/tms/car/listCars",
+                    "menus": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "menuName": "我的车辆-详情",
+            "menuCode": 12109,
+            "uri": "/api/tms/car/getCar",
+            "menus": null
+          },
+          {
+            "menuName": "我的车辆-修改",
+            "menuCode": 12110,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "我的车辆-修改-查询详情",
+                "menuCode": 12111,
+                "uri": "/api/tms/car/getCar",
+                "menus": null
+              },
+              {
+                "menuName": "我的车辆-修改-保存",
+                "menuCode": 12112,
+                "uri": "null",
+                "menus": [
+                  {
+                    "menuName": "我的车辆-修改-保存-上传文件",
+                    "menuCode": 12113,
+                    "uri": "/api/tms/upload/uploadFile",
+                    "menus": null
+                  },
+                  {
+                    "menuName": "我的车辆-修改-保存",
+                    "menuCode": 12114,
+                    "uri": "/api/tms/car/updateCar",
+                    "menus": null
+                  },
+                  {
+                    "menuName": "我的车辆-修改-保存-刷新列表",
+                    "menuCode": 12115,
+                    "uri": "/api/tms/car/listCars",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "我的车辆-修改-返回",
+                "menuCode": 12116,
+                "uri": "/api/tms/car/listCars",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "我的车辆-删除",
+            "menuCode": 12117,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "我的车辆-删除-确定",
+                "menuCode": 12118,
+                "uri": "/api/tms/car/deleteCar",
+                "menus": null
+              },
+              {
+                "menuName": "我的车辆-删除-取消",
+                "menuCode": 12119,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "我的车辆-分页按钮",
+            "menuCode": 12120,
+            "uri": "/api/tms/car/listCars",
+            "menus": null
+          },
+          {
+            "menuName": "我的车辆-参数验证",
+            "menuCode": 12121,
+            "uri": "/api/tms/car/verifyParam",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "车辆-我的司机",
+        "menuCode": 12200,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "车辆-我的司机-查询司机",
+            "menuCode": 12201,
+            "uri": "/api/tms/driver/listDrivers",
+            "menus": null
+          },
+          {
+            "menuName": "车辆-我的司机-新增司机",
+            "menuCode": 12202,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "车辆-我的司机-新增司机-保存",
+                "menuCode": 12203,
+                "uri": "/api/tms/driver/createDriver",
+                "menus": null
+              },
+              {
+                "menuName": "车辆-我的司机-新增司机-返回",
+                "menuCode": 12204,
+                "uri": "/api/tms/driver/listDrivers",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "车辆-我的司机-导入司机",
+            "menuCode": 12205,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "车辆-我的司机-导入司机-提交",
+                "menuCode": 12206,
+                "uri": "/api/tms/driver/importExcel",
+                "menus": [
+                  {
+                    "menuName": "车辆-我的司机-导入司机信息",
+                    "menuCode": 12207,
+                    "uri": "/api/tms/driver/importExcel",
+                    "menus": null
+                  },
+                  {
+                    "menuName": "车辆-我的司机-导入司机-刷新列表",
+                    "menuCode": 12208,
+                    "uri": "/api/tms/driver/listDrivers",
+                    "menus": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "menuName": "车辆-我的司机-详情",
+            "menuCode": 12209,
+            "uri": "/api/tms/driver/getDriver",
+            "menus": null
+          },
+          {
+            "menuName": "车辆-我的司机-修改",
+            "menuCode": 12210,
+            "uri": "/api/tms/driver/getDriver",
+            "menus": [
+              {
+                "menuName": "车辆-我的司机-修改-保存",
+                "menuCode": 12211,
+                "uri": "/api/tms/driver/updateDriver",
+                "menus": [
+                  {
+                    "menuName": "车辆-我的司机-修改-保存-上传文件",
+                    "menuCode": 12212,
+                    "uri": "/api/tms/upload/uploadFile",
+                    "menus": null
+                  },
+                  {
+                    "menuName": "车辆-我的司机-修改-保存-刷新列表",
+                    "menuCode": 12213,
+                    "uri": "/api/tms/driver/listDrivers",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "车辆-我的司机-修改-返回",
+                "menuCode": 12215,
+                "uri": "/api/tms/driver/listDrivers",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "车辆-我的司机-删除",
+            "menuCode": 12216,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "车辆-我的司机-删除-确定",
+                "menuCode": 12217,
+                "uri": "/api/tms/driver/deleteDriver",
+                "menus": null
+              },
+              {
+                "menuName": "车辆-我的司机-删除-取消",
+                "menuCode": 12218,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "车辆-我的司机-分页按钮",
+            "menuCode": 12219,
+            "uri": "/api/tms/driver/listDrivers",
+            "menus": null
+          },
+          {
+            "menuName": "车辆-我的司机-参数验证",
+            "menuCode": 12220,
+            "uri": "/api/tms/driver/verifyParam",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "车辆-我的外请车",
+        "menuCode": 12300,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "车辆-我的外请车-查询车辆",
+            "menuCode": 12301,
+            "uri": "/api/tms/driver/listTmsAppDriver",
+            "menus": null
+          },
+          {
+            "menuName": "车辆-我的外请车-新增车辆",
+            "menuCode": 12302,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "车辆-我的外请车-新增车辆-提交",
+                "menuCode": 12303,
+                "uri": "/api/tms/driver/createTmsAppDriver/all",
+                "menus": null
+              },
+              {
+                "menuName": "车辆-我的外请车-新增车辆-返回",
+                "menuCode": 12304,
+                "uri": "/api/tms/driver/listTmsAppDriver",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "车辆-我的外请车-详情",
+            "menuCode": 12305,
+            "uri": "/api/tms/driver/getTmsAppDriverDetail",
+            "menus": null
+          },
+          {
+            "menuName": "车辆-我的外请车-修改",
+            "menuCode": 12306,
+            "uri": "/api/tms/driver/getTmsAppDriverDetail",
+            "menus": [
+              {
+                "menuName": "车辆-我的外请车-修改-保存",
+                "menuCode": 12307,
+                "uri": "/api/tms/driver/updateTmsAppDriver",
+                "menus": null
+              },
+              {
+                "menuName": "车辆-我的外请车-修改-返回",
+                "menuCode": 12308,
+                "uri": "/api/tms/driver/listTmsAppDriver",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "车辆-我的外请车-删除",
+            "menuCode": 12309,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "车辆-我的外请车-删除-确定",
+                "menuCode": 12310,
+                "uri": "/api/tms/driver/deleteTmsAppDriver",
+                "menus": null
+              },
+              {
+                "menuName": "车辆-我的外请车-删除-取消",
+                "menuCode": 12311,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "车辆-我的外请车-分页按钮",
+            "menuCode": 12312,
+            "uri": "/api/tms/driver/listTmsAppDriver",
+            "menus": null
+          }
+        ]
+      },
+      {
+        "menuName": "车辆-供应商",
+        "menuCode": 12400,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "车辆-供应商-查询供应商",
+            "menuCode": 12401,
+            "uri": "/api/tms/supplier/listSuppliers",
+            "menus": null
+          },
+          {
+            "menuName": "车辆-供应商-新增供应商",
+            "menuCode": 121402,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "车辆-供应商-新增供应商-提交",
+                "menuCode": 12403,
+                "uri": "/api/tms/supplier/createSupplier",
+                "menus": null
+              },
+              {
+                "menuName": "车辆-供应商-新增供应商-返回",
+                "menuCode": 12404,
+                "uri": "/api/tms/supplier/listSuppliers",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "车辆-供应商-详情",
+            "menuCode": 12405,
+            "uri": "/api/tms/supplier/getSupplier",
+            "menus": null
+          },
+          {
+            "menuName": "车辆-供应商-修改",
+            "menuCode": 12406,
+            "uri": "/api/tms/supplier/getSupplier",
+            "menus": [
+              {
+                "menuName": "车辆-供应商-修改-保存",
+                "menuCode": 12407,
+                "uri": "/api/tms/supplier/updateSupplier",
+                "menus": null
+              },
+              {
+                "menuName": "车辆-供应商-修改-返回",
+                "menuCode": 12408,
+                "uri": "/api/tms/supplier/listSuppliers",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "车辆-供应商-删除",
+            "menuCode": 12409,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "车辆-供应商-删除-确定",
+                "menuCode": 12410,
+                "uri": "/api/tms/supplier/deleteSupplier",
+                "menus": null
+              },
+              {
+                "menuName": "车辆-供应商-删除-取消",
+                "menuCode": 12411,
+                "uri": "null",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "车辆-供应商-分页按钮",
+            "menuCode": 12412,
+            "uri": "/api/tms/driver/listTmsAppDriver",
+            "menus": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "menuName": "系统设置",
+    "menuCode": 90000,
+    "uri": "null",
+    "menus": [
+      {
+        "menuName": "系统设置-权限管理",
+        "menuCode": 90100,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "系统设置-权限管理-账号管理",
+            "menuCode": 90101,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "系统设置-权限管理-账号管理-查询用户",
+                "menuCode": 90102,
+                "uri": "/api/tms/system/listTmsUserByPartnerNo",
+                "menus": []
+              },
+              {
+                "menuName": "系统设置-权限管理-账号管理-重置条件",
+                "menuCode": 90103,
+                "uri": "null",
+                "menus": null
+              },
+              {
+                "menuName": "系统设置-权限管理-账号管理-新增用户",
+                "menuCode": 90104,
+                "uri": "null",
+                "menus": [
+                  {
+                    "menuName": "系统设置-权限管理-账号管理-新增用户-提交",
+                    "menuCode": 90105,
+                    "uri": "/api/tms/system/createTmsUser",
+                    "menus": [
+                      {
+                        "menuName": "系统设置-权限管理-账号管理-新增用户-提交后的刷新列表",
+                        "menuCode": 90106,
+                        "uri": "/api/tms/system/listRoles",
+                        "menus": null
+                      }
+                    ]
+                  },
+                  {
+                    "menuName": "系统设置-权限管理-账号管理-新增用户-取消",
+                    "menuCode": 90107,
+                    "uri": "null",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "系统设置-权限管理-账号管理-重置密码",
+                "menuCode": 90108,
+                "uri": "null",
+                "menus": [
+                  {
+                    "menuName": "系统设置-权限管理-账号管理-重置密码-确定",
+                    "menuCode": 90109,
+                    "uri": "/api/tms/system/updatePassword",
+                    "menus": null
+                  },
+                  {
+                    "menuName": "系统设置-权限管理-账号管理-重置密码-取消",
+                    "menuCode": 9010,
+                    "uri": "null",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "系统设置-权限管理-账号管理-修改",
+                "menuCode": 90111,
+                "uri": "/api/tms/system/getTmsUserById",
+                "menus": [
+                  {
+                    "menuName": "系统设置-权限管理-账号管理-修改-提交",
+                    "menuCode": 90112,
+                    "uri": "/api/tms/system/updateTmsUser",
+                    "menus": null
+                  },
+                  {
+                    "menuName": "系统设置-权限管理-账号管理-修改-取消",
+                    "menuCode": 90113,
+                    "uri": "null",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "系统设置-权限管理-账号管理-删除",
+                "menuCode": 90114,
+                "uri": "null",
+                "menus": [
+                  {
+                    "menuName": "系统设置-权限管理-账号管理-删除-确定",
+                    "menuCode": 90115,
+                    "uri": "/api/tms/system/deleteTmsUser",
+                    "menus": [
+                      {
+                        "menuName": "系统设置-权限管理-账号管理-删除-确定后的刷新列表",
+                        "menuCode": 90116,
+                        "uri": "/api/tms/system/listTmsUserByPartnerNo",
+                        "menus": null
+                      }
+                    ]
+                  },
+                  {
+                    "menuName": "系统设置-权限管理-账号管理-删除-取消",
+                    "menuCode": 90117,
+                    "uri": "null",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "系统设置-权限管理-账号管理-获取所有权限",
+                "menuCode": 90118,
+                "uri": "/api/tms/system/listTmsRoleByPartnerNo",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "系统设置-权限管理-角色管理",
+            "menuCode": 90150,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "系统设置-权限管理-角色管理-角色查询",
+                "menuCode": 90151,
+                "uri": "/api/tms/system/listRoles",
+                "menus": null
+              },
+              {
+                "menuName": "系统设置-权限管理-角色管理-重置条件",
+                "menuCode": 90152,
+                "uri": "null",
+                "menus": null
+              },
+              {
+                "menuName": "系统设置-权限管理-角色管理-新增角色",
+                "menuCode": 90153,
+                "uri": "null",
+                "menus": [
+                  {
+                    "menuName": "系统设置-权限管理-角色管理-新增角色-确认",
+                    "menuCode": 90154,
+                    "uri": "/api/tms/system/createRole",
+                    "menus": [
+                      {
+                        "menuName": "系统设置-权限管理-角色管理-新增角色-确认-确认后刷新列表",
+                        "menuCode": 90155,
+                        "uri": "/api/tms/system/listRoles",
+                        "menus": null
+                      }
+                    ]
+                  },
+                  {
+                    "menuName": "系统设置-权限管理-角色管理-新增角色-取消",
+                    "menuCode": 90156,
+                    "uri": "null",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "系统设置-权限管理-角色管理-修改",
+                "menuCode": 90159,
+                "uri": "/api/tms/system/getRole",
+                "menus": [
+                  {
+                    "menuName": "系统设置-权限管理-角色管理-修改-确认",
+                    "menuCode": 90160,
+                    "uri": "/api/tms/system/updateRole",
+                    "menus": [
+                      {
+                        "menuName": "系统设置-权限管理-角色管理-修改-确认后的刷新列表",
+                        "menuCode": 90161,
+                        "uri": "/api/tms/system/listRoles",
+                        "menus": null
+                      }
+                    ]
+                  },
+                  {
+                    "menuName": "系统设置-权限管理-角色管理-修改-返回",
+                    "menuCode": 90162,
+                    "uri": "null",
+                    "menus": null
+                  }
+                ]
+              },
+              {
+                "menuName": "系统设置-权限管理-角色管理-删除",
+                "menuCode": 90163,
+                "uri": "null",
+                "menus": [
+                  {
+                    "menuName": "系统设置-权限管理-角色管理-删除-确定",
+                    "menuCode": 90164,
+                    "uri": "/api/tms/system/deleteRole",
+                    "menus": [
+                      {
+                        "menuName": "系统设置-权限管理-角色管理-删除确定后的刷新列表",
+                        "menuCode": 90165,
+                        "uri": "/api/tms/system/listRoles",
+                        "menus": null
+                      }
+                    ]
+                  },
+                  {
+                    "menuName": "系统设置-权限管理-角色管理-删除-取消",
+                    "menuCode": 90166,
+                    "uri": "null",
+                    "menus": null
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "menuName": "系统设置-修改密码",
+        "menuCode": 90200,
+        "uri": "null",
+        "menus": [
+          {
+            "menuName": "系统设置-修改密码-确认修改",
+            "menuCode": 90201,
+            "uri": "null",
+            "menus": [
+              {
+                "menuName": "系统设置-修改密码-确认按钮-确认提交",
+                "menuCode": 90202,
+                "uri": "/app/approval/modifyPwd",
+                "menus": null
+              }
+            ]
+          },
+          {
+            "menuName": "系统设置-修改密码-取消按钮",
+            "menuCode": 90203,
+            "uri": "null",
+            "menus": null
+          }
+        ]
+      }
+    ]
+  }
+]

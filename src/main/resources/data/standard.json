@@ -1,0 +1,219 @@
+/** 该文件是系统中所有的URL集合 **/
+[
+  {
+    "url": "/app/approval/getValidateCode"
+  },
+  {
+    "url": "/app/approval/validCapChat"
+  },
+  {
+    "url": "/app/approval/sendMobileCapChat"
+  },
+  {
+    "url": "/app/approval/login"
+  },
+  {
+    "url": "/app/approval/mobileLogin"
+  },
+  {
+    "url": "/app/approval/getApprovalList"
+  },
+  {
+    "url": "/app/approval/exportExcel"
+  },
+  {
+    "url": "/app/approval/getDriverDetail"
+  },
+  {
+    "url": "/app/approval/approval"
+  },
+  {
+    "url": "/app/approval/modifyPwd"
+  },
+  {
+    "url": "/app/approval/getRetAmtList"
+  },
+  {
+    "url": "/app/approval/confirmPay"
+  },
+  {
+    "url": "/app/approval/refusePay"
+  },
+  {
+    "url": "/app/approval/sendToFinancialStaff"
+  },
+  {
+    "url": "/app/approval/getBillDetailList"
+  },
+  {
+    "url": "/app/approval/exportBillExcel"
+  },
+  {
+    "url": "/app/approval/test"
+  },
+  {
+    "url": "/api/tms/car/createCar"
+  },
+  {
+    "url": "/api/tms/car/deleteCar"
+  },
+  {
+    "url": "/api/tms/car/updateCar"
+  },
+  {
+    "url": "/api/tms/car/getCar"
+  },
+  {
+    "url": "/api/tms/car/listCars"
+  },
+  {
+    "url": "/api/tms/car/verifyParam"
+  },
+  {
+    "url": "/api/tms/car/importExcel"
+  },
+  {
+    "url": "/api/tms/driver/createDriver"
+  },
+  {
+    "url": "/api/tms/driver/deleteDriver"
+  },
+  {
+    "url": "/api/tms/driver/updateDriver"
+  },
+  {
+    "url": "/api/tms/driver/getDriver"
+  },
+  {
+    "url": "/api/tms/driver/listDrivers"
+  },
+  {
+    "url": "/api/tms/driver/createTmsAppDriver/simple"
+  },
+  {
+    "url": "/api/tms/driver/listTmsAppDriver"
+  },
+  {
+    "url": "/api/tms/driver/createTmsAppDriver/all"
+  },
+  {
+    "url": "/api/tms/driver/getTmsAppDriverDetail"
+  },
+  {
+    "url": "/api/tms/driver/deleteTmsAppDriver"
+  },
+  {
+    "url": "/api/tms/driver/updateTmsAppDriver"
+  },
+  {
+    "url": "/api/tms/driver/verifyParam"
+  },
+  {
+    "url": "/api/tms/driver/importExcel"
+  },
+  {
+    "url": "/api/tms/index/count"
+  },
+  {
+    "url": "/api/tms/loan/listLargerLoan"
+  },
+  {
+    "url": "/api/tms/loan/createLoan"
+  },
+  {
+    "url": "/api/tms/loan/updateLoan"
+  },
+  {
+    "url": "/api/tms/loan/deleteById"
+  },
+  {
+    "url": "/api/tms/loan/getCardInfo"
+  },
+  {
+    "url": "/api/tms/supplier/createSupplier"
+  },
+  {
+    "url": "/api/tms/supplier/deleteSupplier"
+  },
+  {
+    "url": "/api/tms/supplier/updateSupplier"
+  },
+  {
+    "url": "/api/tms/supplier/getSupplier"
+  },
+  {
+    "url": "/api/tms/supplier/listSuppliers"
+  },
+  {
+    "url": "/api/tms/supplier/countSupplier"
+  },
+  {
+    "url": "/api/tms/system/createRole"
+  },
+  {
+    "url": "/api/tms/system/deleteRole"
+  },
+  {
+    "url": "/api/tms/system/updateRole"
+  },
+  {
+    "url": "/api/tms/system/getRole"
+  },
+  {
+    "url": "/api/tms/system/listRoles"
+  },
+  {
+    "url": "/api/tms/system/listTmsRoleByPartnerNo"
+  },
+  {
+    "url": "/api/tms/system/createTmsUser"
+  },
+  {
+    "url": "/api/tms/system/deleteTmsUser"
+  },
+  {
+    "url": "/api/tms/system/updateTmsUser"
+  },
+  {
+    "url": "/api/tms/system/getTmsUserById"
+  },
+  {
+    "url": "/api/tms/system/listTmsUserByPartnerNo"
+  },
+  {
+    "url": "/api/tms/system/updatePassword"
+  },
+  {
+    "url": "/api/tms/system/createDefaultRole"
+  },
+  {
+    "url": "/api/tms/system/refreshMenuJson"
+  },
+  {
+    "url": "/api/tms/wayBill/wayBillList"
+  },
+  {
+    "url": "/api/tms/wayBill/createWayBill"
+  },
+  {
+    "url": "/api/tms/wayBill/getWayBillDetail"
+  },
+  {
+    "url": "/api/tms/wayBill/exportExcel"
+  },
+  {
+    "url": "/api/tms/wayBill/createManualTrajectory"
+  },
+  {
+    "url": "/api/tms/wayBill/listManualTrajectory"
+  },
+  {
+    "url": "/api/tms/wayBill/listExportMessage"
+  },
+  {
+    "url": "/api/tms/wayBill/getLonAndLat"
+  },
+  {
+    "url": "/api/tms/upload/uploadFile"
+  }
+]

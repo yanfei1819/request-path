@@ -1,10 +1,12 @@
 package com.keking.document;
 
+import com.keking.file.ReadAllDir;
 import com.keking.util.FileUtil;
 import com.keking.util.PropertiesUtil;
 import com.keking.util.StringUtil;
 
 import java.io.*;
+import java.util.List;
 
 /**
  * 文档内容
@@ -13,25 +15,23 @@ import java.io.*;
  */
 public class Document {
 
-    //项目路径
-//    private static String PROJECT_PATH = "F:/workplace/tms/ydjf-tms-hefei.git/src";
-    private static String PROJECT_PATH = "F:/workplace/yudian-app/app-core/src";
-    //扫描包
-//    private static String SACNNER_PACKAGE = "/main/java/com/yudianbank/tms/controller/";
-    private static String SACNNER_PACKAGE = "/main/java/com/yudianbank/app/web/controller/";
 
-    //输出文件的映射路径的位置
-    private static String WRITE_TXT_PATH = PropertiesUtil.getPropertis("tms_url_out_path");
 
-    private static String APP_GETURL = PropertiesUtil.getPropertis("app_geturl_out_path");
+
     //是否直接覆盖文件
     private static boolean RE_WRITE = true;
 
     /**
      * 写出文档
      */
-    private void writerMapper() {
-        File write_file = new File(WRITE_TXT_PATH);
+    public void writerMapper(String projectPath,String outputPath) throws IOException {
+
+//        List<String> listControllerPath = ReadAllDir.readAllFile(TMS_PROJECT);
+        List<String> listControllerPath = ReadAllDir.readAllFile(projectPath);
+
+//        File write_file = new File(APP_ALL_PATH);
+        File write_file = new File(outputPath);
+
         if (write_file.exists() && !RE_WRITE) {
             System.out.println("文件已存在  " + write_file.getAbsolutePath());
             return;
@@ -41,26 +41,27 @@ public class Document {
             System.out.println("文件覆盖写入...");
         }
 
-        String[] filepathes = FileUtil.getFilePathes(PROJECT_PATH + SACNNER_PACKAGE);
-        Writer writer = null;
-        try {
-            writer = new FileWriter(write_file);
+        Writer writer;
+        writer = new FileWriter(write_file);
+        for (String controllerPath : listControllerPath) {
+            String[] filepathes = FileUtil.getFilePathes(controllerPath);
+
+            writer.write("文件路径是:"+controllerPath+"\r\n");
+
             for (int i = 0; i < filepathes.length; i++) {
-                File file = new File(PROJECT_PATH + SACNNER_PACKAGE + filepathes[i]);
+                File file = new File(controllerPath + filepathes[i]);
                 try {
+                    writer.write("----------" + filepathes[i] + "----------\r\n");
+                    writer.write(Document.readMapper(file));
                     writer.write("\r\n");
-                    writer.write("=======" + filepathes[i] + "========\r\n");
-                    writer.write(readMapper(file));
                     writer.flush();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            writer.close();
-        } catch (IOException e1) {
-            e1.printStackTrace();
         }
 
+        writer.close();
         System.out.println("文件写入完成:" + write_file.getAbsolutePath());
     }
 
@@ -69,7 +70,7 @@ public class Document {
      *
      * @param f
      */
-    private String readMapper(File f) throws IOException {
+    public static String readMapper(File f) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(f));
         StringBuffer sb = new StringBuffer();
         int i = 0;
@@ -108,15 +109,7 @@ public class Document {
         return sb.toString();
     }
 
-    /**
-     * 项目文件中获取url
-     */
-    public static void getUrls() {
-        System.out.println("===========URL提取开始=========");
-        Document document = new Document();
-        document.writerMapper();
-        System.out.println("===========URL提取结束=========");
-    }
+
 
     /**
      * 读取文件内容
@@ -148,12 +141,11 @@ public class Document {
      * @param str
      * @throws IOException
      */
-    private static void outputFileText(String fileStr, String str) throws IOException {
+    public static void outputFileText(String fileStr, String str) throws IOException {
         FileOutputStream fos = new FileOutputStream(new File(fileStr));
         Writer os = new OutputStreamWriter(fos, "GBK");
         os.write(str);
         os.flush();
         fos.close();
     }
-
 }
